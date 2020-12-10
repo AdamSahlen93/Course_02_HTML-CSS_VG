@@ -34,33 +34,33 @@
 
     #product-window{
         flex-direction: row!important;
-        /*flex-wrap: wrap!important;*/
+        flex-wrap: wrap!important;
     }
 
     #categories {
         width: 250px!important;
         margin-left: 10px;
-        margin-right: 100px;
+        margin-right: 20px;
     }
+    
 
     .products{
         height: 250px;
         width: 450px;
-        background-color: red;
+        margin-right: 30px;
     }
 
     .product{
         padding-bottom: 15px;
-        background-color: yellow;
     }
 
     .class-card img {
         margin-left: 15px;
-        width: 150px!important;
+        width: 100px!important;
     }
 
     .class-card > div:first-of-type {
-        width: 450px!important;
+        width: 350px!important;
     }
 
     .product-badge {
