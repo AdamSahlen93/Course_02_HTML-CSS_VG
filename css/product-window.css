@@ -13,13 +13,11 @@
 }
 
 .rating-badge{
-    bottom: 5px;
     right: 300px;
 
 }
 
 .cart-badge{
-    bottom: 5px;
     right: 10px;
 }
 
@@ -71,6 +69,10 @@
  
     }
 
+    .card-heading{
+        padding-top: 10px;
+    }
+
     .class-card img {
         margin-left: 15px;
         width: 100px!important;
@@ -84,5 +86,5 @@
 }
 
 @media only screen and (max-width: 1023px){
-    .product{margin-top: 10px;}
+    .product{margin-top: 10px; padding-top: 10px; padding-bottom: 10px;}
 }
