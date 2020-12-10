@@ -1,3 +1,7 @@
+#categories{
+    width: 100%;
+    margin: 0px;
+}
 
 .product-badge {
     padding: .1em .1em;
@@ -28,8 +32,26 @@
 @media (min-width: 1024px){
     .class-card { flex-direction: row!important; }
 
+    #product-window{
+        flex-direction: row!important;
+        /*flex-wrap: wrap!important;*/
+    }
+
     #categories {
-        width: 250px;
+        width: 250px!important;
+        margin-left: 10px;
+        margin-right: 100px;
+    }
+
+    .products{
+        height: 250px;
+        width: 450px;
+        background-color: red;
+    }
+
+    .product{
+        padding-bottom: 15px;
+        background-color: yellow;
     }
 
     .class-card img {
@@ -42,8 +64,11 @@
     }
 
     .product-badge {
-        top: 37px!important;
+        top: 10px!important;
         right: 30px!important;
     }
 }
 
+@media only screen and (max-width: 1023px){
+    .product{margin-top: 10px;}
+}
