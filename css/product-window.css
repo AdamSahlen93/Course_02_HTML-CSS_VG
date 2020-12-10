@@ -1,6 +1,7 @@
 #categories{
     width: 100%;
     margin: 0px;
+    min-width: 360px;
 }
 
 .product-badge {
@@ -9,6 +10,17 @@
     right: 15px!important;
     height: 1rem;
     width: 1rem;
+}
+
+.rating-badge{
+    bottom: 5px;
+    right: 300px;
+
+}
+
+.cart-badge{
+    bottom: 5px;
+    right: 10px;
 }
 
 @media (min-width: 576px) and (orientation: portrait), (min-width: 576px) and  (orientation: landscape){
@@ -39,31 +51,29 @@
     }
 
     #categories {
-        width: 500px!important;
+        width: 360px!important;
         margin-left: 10px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .large-cart {display: none!important}
 
     .products{
-        height: 230px;
+        height: 225px;
         width: 500px;
-        margin-right: 0px;
+        margin-right: 10px;
+        margin-bottom: 7px;
     }
 
     .product{
-        padding-bottom: 15px;
-        height: 250px;    
+        height: 220px;
+        width: 500px; 
+ 
     }
 
     .class-card img {
         margin-left: 15px;
         width: 100px!important;
-    }
-
-    .class-card > div:first-of-type {
-        width: 350px!important;
     }
 
     .product-badge {
