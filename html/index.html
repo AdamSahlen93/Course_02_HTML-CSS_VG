@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldshare Store</title>
+
+    <!-- External sources-->
+    <script src="https://kit.fontawesome.com/f4bf10d3c2.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link href="../css/header.css" type="text/css" rel="stylesheet">
+    <link href="../css/headings.css" type="text/css" rel="stylesheet">
+    <link href="../css/information-field.css" type="text/css" rel="stylesheet">
+    <link href="../css/product-categories.css" type="text/css" rel="stylesheet">
+    <link href="../css/product-window.css" type="text/css" rel="stylesheet">
+    <link href="../css/bootstrap-overrides.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header - Navigation -->
+    <header class="bg-dark">
+        <nav class="d-flex flex-row justify-content-between align-items-center">
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <a class=" btn btn-dark dropdown-toggle border-white rounded-0 ml-2 my-1 d-flex flex-row align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user text-white"></i>
+                    <div class="ml-2 mr-1 small-size-content">Adam Sahlén</div>
+                </a>
+                <div class="dropdown-menu bg-white rounded-0" aria-labelledby="dropdownMenuLink">
+                    <!-- User 1-->
+                    <a class="dropdown-item d-flex flex-rowr align-items-center" href="#">
+                        <i class="fas fa-user mr-2"></i>
+                        <div>Jonas Fagerberg</div>
+                    </a>
+                    <!-- User 2-->
+                    <a class="dropdown-item d-flex flex-row align-items-center" href="#">
+                        <i class="fas fa-user mr-2"></i>
+                    <div>Greta Thunberg</div>
+                    </a>
+                    <!-- User 3 -->
+                    <a class="dropdown-item d-flex flex-row align-items-center " href="#">
+                        <i class="fas fa-user mr-2"></i>
+                    <div>Adam Sahlén</div>
+                    </a>
+                </div>
+              </div>
+            <!-- Contact info -->
+            <div class="d-flex flex-row align-items-center">
+                <a href="#" class="d-flex flex-row align-items-center text-decoration-none">
+                    <i class="fas fa-phone-alt text-white mr-1 large-size-content"></i>
+                    <div class="text-white mr-3 large-size-content">555-555-5555</div>
+                </a>
+                    <a href="#" class="d-flex flex-row align-items-center text-decoration-none">
+                    <i class="fas fa-envelope text-white mr-1 medium-size-content"></i>
+                    <div class="text-white medium-size-content">info@worldshare.com</div>
+                </a>
+            </div>
+            <!-- Social media icons -->
+            <div class="mr-2">
+                <a href="#"><i class="fab fa-facebook-square text-white fa-2x "></i></a>
+                <a href="#"><i class="fab fa-twitter-square text-white fa-2x "></i></a>
+                <a href="#"><i class="fab fa-instagram-square text-white fa-2x"></i></a>
+                <a href="#"><i class="fab fa-pinterest-square text-white fa-2x"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Information-field -->
+    <section class="information-container d-flex flex-column align-items-center my-3">
+        <!-- Company logo -->
+        <div class="d-flex flex-row">
+           <img src="../resources/my-images/logotype-simple1.png"  id="logotype-design" class=" d-flex flex-row mb-1" alt="Logotype"> 
+        </div>
+        <!-- Site Icons -->
+        <div class="d-flex flex-row mt-1 mb-2 re-order icon-placement">
+            <!-- Hamburger menu -->
+            <div class="border-right dividing-border pr-3 d-flex flex-column align-items-center hamburger">
+                <i class="fas fa-bars fa-lg mb-1 icon-design"></i>
+                <span class="display-10 text-dark text-uppercase ">Menu</span>
+            </div>
+            <!-- Icon Heart -->
+            <div class="border-right dividing-border px-3 d-flex flex-column align-items-center">
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <i class="fas fa-heart fa-lg mb-1 icon-design"></i>
+                    <span class="badge btn-badge bg-success rounded-100 text-white position-absolute border border-white">7</span>
+                </div>    
+                <span class="display-10 text-dark text-uppercase ">Favourites</span>   
+            </div>
+            <!-- Icon Cart -->
+            <div class="border-right dividing-border px-3 d-flex flex-column align-items-center">
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <i class="fas fa-shopping-cart fa-lg mb-1 icon-design"></i>
+                    <span class="badge btn-badge bg-success rounded-100 text-white position-absolute border border-white">4</span>
+                </div>    
+                <span class="display-10 text-dark text-uppercase">$540.00</span>
+            </div>
+            <!-- Icon Dollar -->
+            <div class="d-flex flex-column align-items-center pl-3">
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <i class="fas fa-file-invoice-dollar fa-lg mb-1 icon-design"></i>
+                    <span class="badge btn-badge bg-success rounded-100 text-white position-absolute border border-white">0</span>
+                </div>
+                <span class="display-10 text-dark text-uppercase">$0.00</span>
+            </div>    
+        </div>
+        <!-- Searchbar -->
+        <div class="d-flex flex-row search-container">
+            <button class="btn rounded-0 bg-secondary" type="submit"><i class="fas fa-search"></i></button>
+            <input type="text" class="form-control rounded-0" placeholder="Search products...">
+        </div> 
+    
+    </section>
+
+
+    <!-- Product Window -->
+    <section>
+        <!-- Product Categories -->
+        <div id="categories" class="d-flex flex-column border">
+            <!-- Category 1 -->
+            <div class="border-bottom d-flex flex-row pl-2 py-1 align-items-center extra-adjustment-3">
+                <i class="fa fa-dragon mr-1 text-danger fa-lg"></i>
+                <span class="display-8-05 text-dark">Fantasy</span>
+            </div>
+            <!-- Category 2 -->
+            <div class="border-bottom d-flex flex-row pl-2 py-1 align-items-center extra-adjustment-3">
+                <i class="fa fa-rocket mr-2 text-danger fa-lg"></i>
+                <span class="display-8-05 text-dark">Science-fiction</span>
+            </div>
+            <!-- Category 3 -->
+            <div class="border-bottom d-flex flex-row pl-2 py-1 align-items-center extra-adjustment-3">
+                <i class="fas fa-child mr-2 text-danger fa-lg extra-adjustment-3"></i>
+                <span class="display-8-05 text-dark extra-adjustment-2">Young adult</span>
+            </div>
+            <!-- Category 4 -->
+            <div class="border-bottom d-flex flex-row pl-2 py-1 align-items-center extra-adjustment-3">
+                <i class="fa fa-heart mr-1 text-danger fa-lg"></i>
+                <span class="display-8-05 text-dark extra-adjustment-3">Romance</span>
+            </div>
+            <!-- Category 5 -->
+            <div class="border-bottom d-flex flex-row pl-2 py-1 align-items-center extra-adjustment-3">
+                <i class="fas fa-chess-rook mr-2 text-danger fa-lg extra-adjustment-2"></i>
+                <span class="display-8-05 text-dark extra-adjustment-2">Historical-fiction</span>
+            </div>
+            <!-- Category 6 -->
+            <div class="border-bottom d-flex flex-row pl-2 py-1 align-items-center extra-adjustment-3">
+                <i class="fas fa-university mr-1 text-danger fa-lg"></i>
+                <span class="display-8-05 text-dark extra-adjustment-2">Nonfiction</span>
+            </div>
+            <!-- Category 7 -->
+            <div class="border-bottom d-flex flex-row pl-2 py-1 align-items-center extra-adjustment-3">
+                <i class="fas fa-pen-fancy mr-1 text-danger fa-lg"></i>
+                <span class="display-8-05 text-dark extra-adjustment-2">Classic</span>
+            </div>
+            <!-- Category 8 -->
+            <div class="border-bottom d-flex flex-row pl-2 py-1 align-items-center extra-adjustment-3">
+                <i class="fas fa-globe-africa mr-1 text-danger fa-lg"></i>
+                <span class="display-8-05 text-dark extra-adjustment-3">Foreign Novel</span>
+            </div>
+            <!-- Category 9 -->
+            <div class="border-bottom d-flex flex-row pl-2 py-1 align-items-center extra-adjustment-3">
+                <i class="fas fa-user mr-2 text-danger fa-lg extra-adjustment-1"></i>
+                <span class="display-8-05 text-dark">Biography</span>
+            </div>
+            <!-- Category 10 -->
+            <div class="border-bottom d-flex flex-row pl-2 py-1 align-items-center extra-adjustment-3">
+                <i class="fas fa-headphones mr-1 text-danger fa-lg"></i>
+                <span class="display-8-05 text-dark extra-adjustment-3">Ebooks</span>
+            </div>
+            <!-- Category 11 -->
+            <div class=" d-flex flex-row pl-2 py-1 align-items-center">
+                <i class="fas fa-mask mr-1 text-danger fa-lg"></i>
+                <span class="display-8-05 text-dark">Graphic Novel</span>
+            </div>
+        </div>
+
+        <!-- Products -->
+        <div class="d-flex flex-column flex-wrap justify-content-center flex-sm-row">
+            <!-- Product 1 -->
+            <div class="class-card d-flex flex-column flex-wrap justify-content-center align-items-center mt-3 pt-3 border mx-2 position-relative">
+                <img src="../resources/my-images/WayOfKings.jpg" alt="WayOfKings" class="w-50">
+                <a href="#" class="position-absolute product-badge"><i class="far fa-heart text-lighty"></i></a>
+                <div class="d-flex flex-column p-4">
+                    <div class="display-9">The Way of Kings - Brandon Sanderson</div>
+                    <div><i class="fa fa-dragon mr-2 mb-3 text-lighty"></i>Fantasy</div>
+                    <div class="mb-3">$24.36</div>
+                    <div class="mb-4">It has been centuries since the fall of the ten consecrated orders known as the Knights Radiant. but their Shardblades and Shardplate remain...</div>
+                    <div class="d-flex flex-row justify-content-between">
+                        <a href="#"><i class="fas fa-cart-plus text-lighty fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="far fa-star text-lighty justify-content-around fa-lg d-flex flex-row-reverse"><p class="mr-2"></p>4.5</i></a>
+                    </div>       
+                </div>
+            </div>  
+        </div>      
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

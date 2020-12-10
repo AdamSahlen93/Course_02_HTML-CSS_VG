@@ -1,0 +1,14 @@
+@media only screen and (max-width: 639px){
+   .small-size-content { display: none!important;}
+}
+
+@media only screen and (max-width: 1023px){
+   .medium-size-content { display: none!important;}
+}
+
+@media only screen and (max-width: 1365px){
+    .large-size-content {display: none!important;}
+ }
+
+
+
